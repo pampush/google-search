@@ -169,8 +169,56 @@ nav {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.main-search__info {
+  margin: 10px 0px 20px 0px;
+  color: #70757a;
+}
+
 .main-wrapper {
   padding-left: 20px;
+}
+
+.main-search__item {
+  margin-bottom: 30px;
+}
+
+.main-search__link {
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #3C4043;
+  line-height: 1.3;
+}
+
+.main-search__link > span::after {
+  display: inline-block;
+  content: " ";
+  border-color: #3C4043 transparent;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  width: 5px;
+  height: 5px;
+
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+.main-search__header {
+  display: inline-block;
+  font-size: 20px;
+  color: #1a0dab;
+}
+
+.main-search__area > a:hover .main-search__header {
+  margin-bottom: -2px;
+  border-bottom: 2px solid #1a0dab;
+
+}
+
+.main-search__content {
+  color: #3C4043;
+  line-height: 1.5;
+  margin-top: 5px;
 }
 
 aside {
