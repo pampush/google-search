@@ -17,7 +17,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #5f6368;
 }
 
 input,
@@ -29,31 +29,26 @@ button {
 .grid-container {
   display: grid;
   grid-template-columns: 146px 640px 1fr;
-  grid-template-rows: 65px 60px 1fr 80px;
+  grid-template-rows: 65px 38px 1fr 80px;
   height: 100vh;
+  margin-top: 20px;
 }
 
 header {
   grid-column: 1/4;
   grid-row: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 20px;
+  display: grid;
+  grid-template-columns: inherit;
+  align-items: start;
 }
 
 .header-logo {
-  flex: 0 0 146px;
-  padding: 15px 20px 10px 20px;
+  padding: 8px 20px 10px 20px;
 }
 
 .header-logo__img {
   width: 92px;
   height: 30px;
-}
-
-.header-wrapper {
-  flex: 0 0 640px;
 }
 
 .header-btn {
@@ -103,7 +98,6 @@ header {
 }
 
 .header-user {
-  flex: 0 0 auto;
   margin-left:auto;
   display: flex;
   align-items: center;
@@ -129,39 +123,41 @@ header {
 
 nav {
   grid-row: 2;
-  grid-column: 2 / 3;
-  display: flex;
-  margin: 11px 10px 0px 10px;
-
+  grid-column: 1 / 4;
+  display: grid;
+  grid-template-columns: inherit;
+  border-bottom: 1px solid #ebebeb;
   font-size: 13px;
 }
 
 .nav-section {
   display: flex;
-  align-items: center;
+  grid-column: 2;
+  margin-left: 10px;
+  color: #5f6368;
 }
 
 .nav-section__btn {
-  color:#5f6368; 
+
 }
 
 .nav-section__btn > a {
   display: flex;
   align-items: center;
-
-  padding: 10px 10px 5px 10px;
+  padding: 7px 10px 12px 10px;
 }
 
 .nav-section__btn-svg {
   width: 16px;
   height: 16px;
   margin-right: 5px;
+  fill: #5f6368;
 }
 
 .nav-tools {
   display: flex;
-  align-items: center;
   margin-left: auto;
+  padding-top: 7px;
 }
 
 .nav-tools__item {
