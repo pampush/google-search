@@ -30,7 +30,6 @@ button {
   display: grid;
   grid-template-columns: 146px 640px 1fr;
   grid-template-rows: 65px 38px 1fr 80px;
-  height: 100vh;
   margin-top: 20px;
 }
 
@@ -220,6 +219,46 @@ nav {
   line-height: 1.5;
   margin-top: 5px;
 }
+
+.main-search__card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+}
+
+.main-search__card > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #dfe1e5;
+}
+
+.main-search__card :first-child {
+  font-size: 20px;
+}
+
+.main-search__card :last-child {
+  border: none;
+}
+
+.main-search__card-feedback {
+  padding: 5px 10px 0px 0px;
+  font-size: 12px;
+  font-style: italic;
+  float: right;
+}
+
+.main-search__card-svg {
+  width: 24px;
+  height: 24px;
+  fill: #70757A;
+}
+
 
 aside {
   grid-column: 3;
