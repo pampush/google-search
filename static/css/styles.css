@@ -15,6 +15,9 @@ body {
   font-size: 14px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
 a {
   text-decoration: none;
   color: #5f6368;
@@ -174,7 +177,7 @@ nav {
 }
 
 .main-wrapper {
-  padding-left: 20px;
+  padding: 0px 20px;
 }
 
 .main-search__item {
@@ -246,11 +249,22 @@ nav {
   border: none;
 }
 
-.main-search__card-feedback {
+.main-search__card-feedback1 {
+  display: flex;
+  justify-content: flex-end;
   padding: 5px 10px 0px 0px;
   font-size: 12px;
   font-style: italic;
-  float: right;
+  margin-bottom: 30px;
+}
+
+.main-search__card-feedback2 {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 10px 0px 0px;
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 10px;
 }
 
 .main-search__card-svg {
@@ -259,6 +273,51 @@ nav {
   fill: #70757A;
 }
 
+.main-search__related {
+  padding: 10px;
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+}
+
+.main-search__related > div:first-child {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #70757a;
+}
+
+.main-search__related > div:nth-child(2) {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+.main-search__related > a {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.main-search__related-list-row {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.main-search__related-list h3 {
+  color: #222;
+  font-weight: normal;
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+
+.main-search__related-list-row  a  div {
+  padding: 3px 32px 3px 0px;
+  font-weight: bold;
+  color: #1a0dab;
+  line-height: 1.5;
+} 
+
+.main-search__related-list-row  a:hover > div{
+  text-decoration: underline;
+}
 
 aside {
   grid-column: 3;
