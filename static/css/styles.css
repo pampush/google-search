@@ -168,6 +168,8 @@ nav {
 
 .main-search {
   grid-column: 2;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -318,6 +320,61 @@ nav {
 .main-search__related-list-row  a:hover > div{
   text-decoration: underline;
 }
+
+
+.main-search__footer {
+  align-self: center;
+  display: flex;
+  text-align: center;
+  margin: 30px 0px;
+} 
+
+.main-search__footer > a {
+  color: #4285f4;
+}
+
+.main-search__footer-G {
+  background:url(../img/nav_logo299.webp) no-repeat;  
+  height: 40px;
+  width: 28px;
+  background-position: -24px 0;
+}
+
+.main-search__footer-or {
+  background:url(../img/nav_logo299.webp) no-repeat;  
+  height: 40px;
+  width: 20px;
+  background-position: -53px 0;
+}
+
+.main-search__footer-o {
+  background:url(../img/nav_logo299.webp) no-repeat;  
+  height: 40px;
+  width: 20px;
+  background-position: -74px 0;
+}
+
+.main-search__footer a:last-child {
+  text-align: end;
+}
+
+.main-search__footer-gle {
+  background:url(../img/nav_logo299.webp) no-repeat;  
+  height: 40px;
+  width: 71px;
+  background-position: -96px 0;
+}
+
+.main-search__footer-char:first-child {
+  width: 28px;
+}
+
+.main-search__footer > a:hover {
+  text-decoration: underline;
+}  
+
+
+
 
 aside {
   grid-column: 3;
