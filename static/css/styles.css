@@ -35,7 +35,7 @@ button {
   display: grid;
   grid-template-columns: 146px 640px 1fr;
   grid-template-rows: 65px 38px 1fr 83px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 header {
@@ -44,6 +44,10 @@ header {
   display: grid;
   grid-template-columns: inherit;
   align-items: start;
+  padding-top: 5px;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
 }
 
 .header-logo {
@@ -90,8 +94,40 @@ header {
   background-size: 24px;
   background-position: center; 
   cursor: pointer;
+
+  position: relative;
 }
 
+.header-search__mic-tooltip {
+  position: absolute;
+  visibility: hidden;
+  width: 100px;
+  top: 45px;
+  left: -43px;
+  padding: 5px 0px;
+  background-color: #222;
+  font-size: 11px;
+  font-weight: bolder;
+  text-align: center;
+
+  color: #e4e4e4;
+}
+
+.header-search__mic-tooltip:after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #222 transparent;
+}
+
+.header-search__mic:hover .header-search__mic-tooltip {
+  position: absolute;
+  visibility: visible;
+}
 
 .header-search__btn {
   flex: 0 0 44px;
@@ -431,12 +467,11 @@ nav {
 }  
 
 
-
-
 aside {
   grid-column: 3;
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 
 footer {
   grid-column: 1 / 4;
