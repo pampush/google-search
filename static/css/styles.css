@@ -84,10 +84,12 @@ header {
 
 .header-search__mic {
   flex: 0 0 24px;
-  height: 24px;
+  height: 40px;
   margin: 0 8px;
   background: url("https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png") 0 0 no-repeat;
-  background-size: 24px; 
+  background-size: 24px;
+  background-position: center; 
+  cursor: pointer;
 }
 
 
@@ -98,6 +100,7 @@ header {
   color: #000;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .header-search__btn-svg {
@@ -346,6 +349,10 @@ nav {
 .main-search__related > a {
   display: inline-block;
   margin-right: 16px;
+}
+
+.main-search__related img {
+  object-fit: cover;
 }
 
 .main-search__related-list-row {
