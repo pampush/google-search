@@ -33,7 +33,7 @@ button {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 146px 640px 1fr;
+  grid-template-columns: minmax(146px, 0.75fr) minmax(640px, 3fr) minmax(140px, 4fr);  /*146px 640px 1fr;*/  
   grid-template-rows: 65px 38px 1fr 83px;
   margin-top: 15px;
 }
